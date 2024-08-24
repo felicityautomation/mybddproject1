@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: email with data:=test@edurekha.com]]>
+    </line>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome123]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+    </line>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: email with data:=test1@edurekha.com]]>
+    </line>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome1234]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+    </line>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: email with data:=test@edurekha.com]]>
+    </line>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome123]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+    </line>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: email with data:=mytest@edk.com]]>
+    </line>
+    <line>
+      <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome123238749872]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-08-24T21:42:55 IST" name="Suite" finished-at="2024-08-24T21:43:39 IST" duration-ms="44153">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunnerFile2@477b4cdf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-08-24T21:42:55 IST" name="Test" finished-at="2024-08-24T21:43:39 IST" duration-ms="44153">
+      <class name="runner.LoginRunnerFile2">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.LoginRunnerFile2@477b4cdf]" started-at="2024-08-24T21:42:55 IST" name="setUpClass" finished-at="2024-08-24T21:42:55 IST" duration-ms="877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@67f3d192]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunnerFile2@477b4cdf]" started-at="2024-08-24T21:42:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-24T21:43:08 IST" duration-ms="12584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message when logged in with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is the Login feature of Facebook application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: email with data:=test@edurekha.com]]>
+            </line>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome123]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunnerFile2@477b4cdf]" started-at="2024-08-24T21:43:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-24T21:43:19 IST" duration-ms="11345" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message when logged in with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is the Login feature of Facebook application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_PL">...</button> is not clickable at point (781, 303). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=127.0.6533.100)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1874cb95651787841f698c30ef568e27, clickElement {id=f.A9E059793DF98E6F00552EFC79E9FF19.d.D2EADBFEEBF66A274BBC4D5D51FB1CB7.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52995/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1874cb95651787841f698c30ef568e27)] -> xpath: //button]
+Session ID: 1874cb95651787841f698c30ef568e27]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_PL">...</button> is not clickable at point (781, 303). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=127.0.6533.100)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1874cb95651787841f698c30ef568e27, clickElement {id=f.A9E059793DF98E6F00552EFC79E9FF19.d.D2EADBFEEBF66A274BBC4D5D51FB1CB7.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52995/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1874cb95651787841f698c30ef568e27)] -> xpath: //button]
+Session ID: 1874cb95651787841f698c30ef568e27
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at utilties.WebActions.click(WebActions.java:28)
+at pages.FbLoginPage.clickLoginButton(FbLoginPage.java:36)
+at step.definitions.Steps.click_on_login_button(Steps.java:42)
+at ✽.Click on Login button(file:///D:/edureka11/workspace/seleniumbddproject/features/Login.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: email with data:=test1@edurekha.com]]>
+            </line>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome1234]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunnerFile2@477b4cdf]" started-at="2024-08-24T21:43:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-24T21:43:29 IST" duration-ms="9286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message when logged in with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is the Login feature of Facebook application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: email with data:=test@edurekha.com]]>
+            </line>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome123]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.LoginRunnerFile2@477b4cdf]" started-at="2024-08-24T21:43:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-24T21:43:39 IST" duration-ms="9927" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message when logged in with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is the Login feature of Facebook application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_hb">...</button> is not clickable at point (781, 303). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=127.0.6533.100)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [67964408e6fa1b4104acb497a6b54885, clickElement {id=f.56CDDD46FCB6D7CE06A43383BD89F355.d.20AB1C4A01C3D89ACE483F55B61941C9.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53110/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (67964408e6fa1b4104acb497a6b54885)] -> xpath: //button]
+Session ID: 67964408e6fa1b4104acb497a6b54885]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_5_hb">...</button> is not clickable at point (781, 303). Other element would receive the click: <div class="_3ixn"></div>
+  (Session info: chrome=127.0.6533.100)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [67964408e6fa1b4104acb497a6b54885, clickElement {id=f.56CDDD46FCB6D7CE06A43383BD89F355.d.20AB1C4A01C3D89ACE483F55B61941C9.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53110/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (67964408e6fa1b4104acb497a6b54885)] -> xpath: //button]
+Session ID: 67964408e6fa1b4104acb497a6b54885
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at utilties.WebActions.click(WebActions.java:28)
+at pages.FbLoginPage.clickLoginButton(FbLoginPage.java:36)
+at step.definitions.Steps.click_on_login_button(Steps.java:42)
+at ✽.Click on Login button(file:///D:/edureka11/workspace/seleniumbddproject/features/LoginMultipleSetofData.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: email with data:=mytest@edk.com]]>
+            </line>
+            <line>
+              <![CDATA[Setting the text of the element:=By.id: pass with data:=welcome123238749872]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the element with locator:=By.xpath: //button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.LoginRunnerFile2@477b4cdf]" started-at="2024-08-24T21:43:39 IST" name="tearDownClass" finished-at="2024-08-24T21:43:39 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.LoginRunnerFile2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

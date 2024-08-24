@@ -1,0 +1,243 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 24 21:42:55 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>44 seconds (44153 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.LoginRunnerFile2.runScenario()'><b>runScenario</b><br>Test class: runner.LoginRunnerFile2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message when logged in with invalid credentials", "This is the Login feature of Facebook application"<br/>
+<a href="#Output-2089786414" onClick='toggleBox("Output-2089786414", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2089786414" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2089786414">
+Setting the text of the element:=By.id: email with data:=mytest@edk.com<br/>
+Setting the text of the element:=By.id: pass with data:=welcome123238749872<br/>
+Clicking on the element with locator:=By.xpath: //button<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; data-testid=&quot;royal_login_button&quot; type=&quot;submit&quot; id=&quot;u_0_5_hb&quot;&gt;...&lt;/button&gt; is not clickable at point (781, 303). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=127.0.6533.100)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [67964408e6fa1b4104acb497a6b54885, clickElement {id=f.56CDDD46FCB6D7CE06A43383BD89F355.d.20AB1C4A01C3D89ACE483F55B61941C9.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53110/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (67964408e6fa1b4104acb497a6b54885)] -&gt; xpath: //button]
+Session ID: 67964408e6fa1b4104acb497a6b54885
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at utilties.WebActions.click(WebActions.java:28)
+	at pages.FbLoginPage.clickLoginButton(FbLoginPage.java:36)
+	at step.definitions.Steps.click_on_login_button(Steps.java:42)
+	at ✽.Click on Login button(file:///D:/edureka11/workspace/seleniumbddproject/features/LoginMultipleSetofData.feature:9)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089786414", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089786414'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; data-testid=&quot;royal_login_button&quot; type=&quot;submit&quot; id=&quot;u_0_5_hb&quot;&gt;...&lt;/button&gt; is not clickable at point (781, 303). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=127.0.6533.100)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [67964408e6fa1b4104acb497a6b54885, clickElement {id=f.56CDDD46FCB6D7CE06A43383BD89F355.d.20AB1C4A01C3D89ACE483F55B61941C9.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53110}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53110/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (67964408e6fa1b4104acb497a6b54885)] -&gt; xpath: //button]
+Session ID: 67964408e6fa1b4104acb497a6b54885
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at utilties.WebActions.click(WebActions.java:28)
+	at pages.FbLoginPage.clickLoginButton(FbLoginPage.java:36)
+	at step.definitions.Steps.click_on_login_button(Steps.java:42)
+	at ✽.Click on Login button(file:///D:/edureka11/workspace/seleniumbddproject/features/LoginMultipleSetofData.feature:9)
+</pre></div></td>
+<td>9</td>
+<td>runner.LoginRunnerFile2@477b4cdf</td></tr>
+<tr>
+<td title='runner.LoginRunnerFile2.runScenario()'><b>runScenario</b><br>Test class: runner.LoginRunnerFile2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message when logged in with invalid credentials", "This is the Login feature of Facebook application"<br/>
+<a href="#Output-2089104518" onClick='toggleBox("Output-2089104518", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2089104518" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2089104518">
+Setting the text of the element:=By.id: email with data:=test1@edurekha.com<br/>
+Setting the text of the element:=By.id: pass with data:=welcome1234<br/>
+Clicking on the element with locator:=By.xpath: //button<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; data-testid=&quot;royal_login_button&quot; type=&quot;submit&quot; id=&quot;u_0_5_PL&quot;&gt;...&lt;/button&gt; is not clickable at point (781, 303). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=127.0.6533.100)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1874cb95651787841f698c30ef568e27, clickElement {id=f.A9E059793DF98E6F00552EFC79E9FF19.d.D2EADBFEEBF66A274BBC4D5D51FB1CB7.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52995/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1874cb95651787841f698c30ef568e27)] -&gt; xpath: //button]
+Session ID: 1874cb95651787841f698c30ef568e27
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at utilties.WebActions.click(WebActions.java:28)
+	at pages.FbLoginPage.clickLoginButton(FbLoginPage.java:36)
+	at step.definitions.Steps.click_on_login_button(Steps.java:42)
+	at ✽.Click on Login button(file:///D:/edureka11/workspace/seleniumbddproject/features/Login.feature:16)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089104518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089104518'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button value=&quot;1&quot; class=&quot;_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy&quot; name=&quot;login&quot; data-testid=&quot;royal_login_button&quot; type=&quot;submit&quot; id=&quot;u_0_5_PL&quot;&gt;...&lt;/button&gt; is not clickable at point (781, 303). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=127.0.6533.100)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1874cb95651787841f698c30ef568e27, clickElement {id=f.A9E059793DF98E6F00552EFC79E9FF19.d.D2EADBFEEBF66A274BBC4D5D51FB1CB7.e.27}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\bhara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52995}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52995/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1874cb95651787841f698c30ef568e27)] -&gt; xpath: //button]
+Session ID: 1874cb95651787841f698c30ef568e27
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at utilties.WebActions.click(WebActions.java:28)
+	at pages.FbLoginPage.clickLoginButton(FbLoginPage.java:36)
+	at step.definitions.Steps.click_on_login_button(Steps.java:42)
+	at ✽.Click on Login button(file:///D:/edureka11/workspace/seleniumbddproject/features/Login.feature:16)
+</pre></div></td>
+<td>11</td>
+<td>runner.LoginRunnerFile2@477b4cdf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.LoginRunnerFile2.runScenario()'><b>runScenario</b><br>Test class: runner.LoginRunnerFile2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message when logged in with invalid credentials", "This is the Login feature of Facebook application"<br/>
+<a href="#Output-716550087" onClick='toggleBox("Output-716550087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-716550087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-716550087">
+Setting the text of the element:=By.id: email with data:=test@edurekha.com<br/>
+Setting the text of the element:=By.id: pass with data:=welcome123<br/>
+Clicking on the element with locator:=By.xpath: //button<br/>
+Clicking on the element with locator:=By.xpath: //button<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>runner.LoginRunnerFile2@477b4cdf</td></tr>
+<tr>
+<td title='runner.LoginRunnerFile2.runScenario()'><b>runScenario</b><br>Test class: runner.LoginRunnerFile2<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message when logged in with invalid credentials", "This is the Login feature of Facebook application"<br/>
+<a href="#Output-1844700236" onClick='toggleBox("Output-1844700236", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1844700236" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1844700236">
+Setting the text of the element:=By.id: email with data:=test@edurekha.com<br/>
+Setting the text of the element:=By.id: pass with data:=welcome123<br/>
+Clicking on the element with locator:=By.xpath: //button<br/>
+Clicking on the element with locator:=By.xpath: //button<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>runner.LoginRunnerFile2@477b4cdf</td></tr>
+</table><p>
+</body>
+</html>
